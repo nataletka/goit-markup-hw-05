@@ -507,25 +507,27 @@
             </li>
           </ul>
         </div>
-
-        <form class="footer-subscribe">
-          <label class="footer-label" for="mail">Subscribe</label>
-          <div class="footer-send">
-            <input
-              class="footer-field"
-              type="email"
-              name="mail"
-              id="mail"
-              placeholder="E-mail"
-            />
-            <button class="footer-btn" type="submit"
-              >Subscribe
-              <svg class="icon-btn" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </div>
-        </form>
+        <div class="footer-mail">
+          <p class="footer-subscribe">Subscribe</p>
+          <form class="footer-subscribe">
+            <label class="footer-label" for="mail"></label>
+            <div class="footer-send">
+              <input
+                class="footer-field"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
+              />
+              <button class="footer-btn" type="submit"
+                >Subscribe
+                <svg class="icon-btn" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-open">
@@ -580,10 +582,10 @@
             </div>
           </div>
           <div class="modal-form-field">
-            <label class="modal-form-label" for="user-massage">Comment</label>
+            <label class="modal-form-label" for="user-comment">Comment</label>
             <textarea
-              name="user-massage"
-              id="user-massage"
+              name="user-comment"
+              id="user-comment"
               class="modal-form-massage"
               placeholder="Text input"
             ></textarea>
@@ -592,11 +594,12 @@
             <input
               class="visually-hidden"
               type="checkbox"
-              name="user-policy"
-              id="user-policy"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
               checked
             />
-            <label class="modal-form-policy-text" for="user-policy">
+            <label class="modal-form-policy-text" for="user-privacy">
               <span class="modal-form-check">
                 <svg class="icon-modal-check" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
